@@ -23,3 +23,6 @@ This is tic tac toe game. You can try playing game with computer and try to win.
 ## Mockups
 ![Tic-tac-toe](https://ibb.co/hpnoYV.png)
 ![Tic-tac-toe_mobile](https://ibb.co/bsJvDV)
+
+[url=https://ibb.co/hpnoYV][img]https://preview.ibb.co/bXQLfA/mockup-tic.png[/img][/url]
+[url=https://ibb.co/bsJvDV][img]https://preview.ibb.co/mAaxSq/mockup-tic-mobile.png[/img][/url]
