@@ -16,3 +16,8 @@ This is tic tac toe game. You can try playing game with computer and try to win.
 ## Tech stack
 *	javascript
 *	html/css/scss
+
+## Demo
+*Github page [Tic-tac-toe](https://dengodovanets.github.io/tic-tac-toe/)
+
+## Mockups
