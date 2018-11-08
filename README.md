@@ -21,3 +21,5 @@ This is tic tac toe game. You can try playing game with computer and try to win.
 *Github page [Tic-tac-toe](https://dengodovanets.github.io/tic-tac-toe/)
 
 ## Mockups
+[GitHub](https://ibb.co/hpnoYV)
+[GitHub](https://ibb.co/bsJvDV)
