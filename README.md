@@ -8,8 +8,9 @@
 *	Improve knowledge with DOM events
 
 ## ELEKS Front-Camp 2018
-*	Course curator - Volodymyr Shevchuk
-*	Front-camp facebook
+*	Course curator - [Volodymyr Shevchuk](https://github.com/dosandk)
+*	Front-camp [facebook](https://github.com/dosandk)
+
 
 
 ## Tech stack
