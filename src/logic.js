@@ -23,6 +23,7 @@ function logic () {
   });
 
   $reset.addEventListener('click', reseting);
+
   function winner (elements) {
     const moves = Array.prototype.slice.call(elements);
     const results = moves.map(item => item.innerHTML);
@@ -36,8 +37,7 @@ function logic () {
       [0, 4, 8],
       [2, 4, 6]
     ];
-
-    winningCombos.find(combo => {
+    winningCombos.forEach(combo => {
       if (results[combo[0]] !== '' && results[combo[1]] !== ''
         && results[combo[2]] !== '' && results[combo[0]] === results[combo[1]]
         && results[combo[1]] === results[combo[2]]) {
@@ -61,6 +61,7 @@ function logic () {
           $player2.innerHTML++
           ;
         }
+        
         setTimeout(() => reseting(), 1000);
       } else {
         return false;
