@@ -4,7 +4,7 @@ self.addEventListener('install', function (e) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/dist/bundle.js'                
+        '/src/main.js'                
       ]);
     })
   );
