@@ -23,3 +23,7 @@ This is tic tac toe game. You can try playing game with computer and try to win.
 ## Mockups
 ![Tic-tac-toe](https://preview.ibb.co/bXQLfA/mockup-tic.png)
 ![Tic-tac-toe_mobile](https://preview.ibb.co/mAaxSq/mockup-tic-mobile.png)
+
+## Twitter link
+
+*Twitter  [Tic-tac-toe](https://dengodovanets.github.io/tic-tac-toe/)
