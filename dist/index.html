@@ -37,6 +37,13 @@
       <div class="block block9"></div>
     </div>
   </div>
-<script type="text/javascript" src="./dist/bundle.js"></script>  
+<script type="text/javascript" src="./dist/bundle.js"></script>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+  </script>
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>

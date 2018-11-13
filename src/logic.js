@@ -6,7 +6,7 @@ function logic () {
   const $reset = document.querySelector('.reset');
 
   $fieldClick.addEventListener('click', e => {
-    if (e.target.innerHTML !== '' || isWin) {
+    if (e.target.innerHTML !== '') {
       return;
     }
     e.target.innerHTML = 'X';
@@ -19,7 +19,7 @@ function logic () {
 
       randomArr[random - 1].innerHTML = 'O';
     }
-    setTimeout(() => winner($fieldClick.children), 0);
+    setTimeout(() => winner($fieldClick.children), 1000);
   });
 
   $reset.addEventListener('click', reseting);
@@ -37,36 +37,36 @@ function logic () {
       [0, 4, 8],
       [2, 4, 6]
     ];
+   
     winningCombos.forEach(combo => {
       if (results[combo[0]] !== '' && results[combo[1]] !== ''
         && results[combo[2]] !== '' && results[combo[0]] === results[combo[1]]
         && results[combo[1]] === results[combo[2]]) {
-        isWin = true;
-        moves.forEach((element, index) => {
-          if (index === combo[0] || index === combo[1] || index === combo[2]) {
-            element.style.backgroundColor = 'rgb(81, 107, 81)';
+        if (!isWin) {
+          moves.forEach((element, index) => {
+            if (index === combo[0] || index === combo[1] || index === combo[2]) {
+              element.style.backgroundColor = 'rgb(81, 107, 81)';
+            }
+          });        
+          if (results[combo[0]] === 'X') {
+            setTimeout(() => alert('winX'), 500);
+            isWin = true;          
+            $player1.innerHTML++;
+            setTimeout(() => reseting(), 1000);
+          } else {
+            setTimeout(() => alert('winO'), 500);
+            isWin = true;
+            $player2.innerHTML++;
+            setTimeout(() => reseting(), 1000);
           }
-        });
-        if (results[combo[0]] === 'X') {
-          setTimeout(() => alert('winX'), 500);
-          //alert('winnX');
-          //isWin = true;
-
-          $player1.innerHTML++
-          ;
-        } else {
-          setTimeout(() => alert('winO'), 500);
-          //alert('winO');
-          //isWin = true;
-          $player2.innerHTML++
-          ;
         }
-        
+      } else if (results.every(elem=>elem !== '') && results[combo[0]] !== results[combo[1]]
+      && results[combo[1]] !== results[combo[2]] && !isWin){
+        alert('Nobody Win');
+        isWin = true;
         setTimeout(() => reseting(), 1000);
-      } else {
-        return false;
-      }
-    });
+      }              
+    });    
   }
 
   function reseting () {
