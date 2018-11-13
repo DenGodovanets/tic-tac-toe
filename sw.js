@@ -1,24 +1,24 @@
 
 
 
-// var CACHE_NAME = 'dev';
-// var urlsToCache = [  
-//   './index.html',
-//   './dist/main.js'
-// ];
+var CACHE_NAME = 'dev';
+var urlsToCache = [  
+  './index.html',
+  './dist/main.js'
+];
 
 
-// // Installing a sevice worker and defining files to be cached. 
-// self.addEventListener('install', function(event) {
-//   // Perform install steps
-//   event.waitUntil(
-//     caches.open(CACHE_NAME)
-//       .then(function(cache) {
-//         console.log('Opened cache');
-//         return cache.addAll(urlsToCache);
-//       })
-//   );
-// });
+// Installing a sevice worker and defining files to be cached. 
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
 
 
 // Updating the service worker.
