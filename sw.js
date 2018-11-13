@@ -1,8 +1,7 @@
 var CACHE_NAME = 'dev';
-var urlsToCache = [
-  
-  '/index.html',
-  '/dist/main.js'
+var urlsToCache = [  
+  './index.html',
+  './dist/main.js'
 ];
 
 
