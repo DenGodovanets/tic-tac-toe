@@ -26,4 +26,4 @@ This is tic tac toe game. You can try playing game with computer and try to win.
 
 ## Twitter link
 
-*Twitter  [Tic-tac-toe](https://dengodovanets.github.io/tic-tac-toe/)
+*Twitter  [Tic-tac-toe](https://twitter.com/DenysGodovanets/status/1062348807340519424)
